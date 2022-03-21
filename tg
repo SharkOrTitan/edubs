@@ -1,14 +1,21 @@
 local Library = loadstring(game:HttpGet("https://pastebin.com/raw/6W1ZqV53"))()
 
-local w = Library:Window("Eternal Dubs")
+local w = Library:Window("rogue ops kinda bad")
 
-w:Toggle("Collector Check (B3)", function(h)
-
+w:Button("Collector Check (b3)", function()
+   tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(3, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(276.3773193359375, 5141.5712890625, 2070.480712890625)}):Play()
+end)
+w:Button("Collector Check (j4)", function()
+  tweenService, tweenInfo = game:GetService("TweenService"), TweenInfo.new(3, Enum.EasingStyle.Linear)
+tweenService:Create(game:GetService("Players")["LocalPlayer"].Character.HumanoidRootPart, tweenInfo, {CFrame = CFrame.new(3903.373046875, 5137.90576171875, -337.3388977050781)}):Play()
 end)
 w:Button("No fall", function()
    game:GetService("Players").LocalPlayer.Character.FallDamage:Destroy()
 end)
-
+w:Button("Chat logger", function()
+   loadstring(game:HttpGet("https://pastebin.com/raw/stggPUBM", true))()
+end)
 w:Toggle("Tundra 3 bot", function(v)
 vv = v
 while vv do task.wait()
